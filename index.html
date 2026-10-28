@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Athena Forge</title>
+<link rel="stylesheet" href="css/athena.css">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#14110F">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="icon" type="image/svg+xml" href="icon.svg">
+<link rel="apple-touch-icon" href="icon-192.png">
+</head>
+<body>
+<header>
+  <div class="brand"><span class="owl">Α</span> Athena Forge<small>HTML • CSS • JSON • JavaScript • Canvas • 3D — build anywhere</small></div>
+  <select id="tpl" aria-label="Template" style="width:auto"><option value="">Templates…</option><option value="blank">Blank</option><option value="hello">Hello World</option><option value="counter">Counter</option><option value="landing">Landing page</option><option value="form">Contact form</option><option value="business">Business homepage</option><option value="pricing">Pricing page</option><option value="dashboard">Dashboard</option><option value="table">Data table</option><option value="todo">To-do list</option><option value="timer">Timer</option><option value="quiz">Quiz</option><option value="calculator">Calculator</option><option value="services">Services page</option><option value="product">Product page</option><option value="inventory">Inventory manager</option><option value="crm">CRM contacts</option><option value="admin">Admin panel</option><option value="temple">Temple</option></select><select id="mode" aria-label="Mode" style="width:auto"><option value="0">Beginner</option><option value="1">Intermediate</option><option value="2">Advanced</option></select>
+  <input id="q" type="search" placeholder="Search elements, components…" aria-label="Search" style="width:150px"><button id="b-undo" title="Ctrl/Cmd+Z">Undo</button><button id="b-redo" title="Ctrl/Cmd+Shift+Z">Redo</button>
+  <span class="sp"></span>
+  <button id="b-save" title="Ctrl/Cmd+S">Save</button><button id="b-open" title="Ctrl/Cmd+O">Open</button><button id="b-import">Import</button><button id="b-export" class="primary">Export</button><button id="b-single" title="One self-contained HTML file (best on mobile)">Export single page</button><button id="b-theme">Theme</button><button id="b-help" aria-label="Help and shortcuts">?</button>
+  <input type="file" id="file" accept=".json" hidden><input type="file" id="deffile" accept=".json" hidden><div id="sres" hidden></div><dialog id="dlg"></dialog>
+</header>
+<nav class="mnav" aria-label="Panels"><button data-v="tree">Structure</button><button data-v="prev">Preview</button><button data-v="edit">Edit</button></nav>
+<main data-v="prev">
+  <section class="pane" id="p-tree">
+    <h2>Structure (HTML)</h2>
+    <div class="row"><select id="addtag" aria-label="Element to add"></select><button id="b-add" class="primary" style="flex:0 0 auto">Add</button></div>
+    <div id="tree"></div>
+    <div class="row" id="treebtns"><button data-a="up">Up</button><button data-a="down">Down</button><button data-a="in">Nest</button><button data-a="out">Unnest</button><button data-a="dup">Duplicate</button><button data-a="del">Delete</button></div>
+  </section>
+  <section class="pane preview" id="p-prev">
+    <div class="row" style="flex:0 0 auto;margin-top:0"><select id="size" aria-label="Preview size" style="flex:0 0 auto;width:auto"><option value="100%">Desktop</option><option value="768px">Tablet</option><option value="375px">Mobile</option><option value="custom">Custom</option></select><input id="csize" type="number" min="200" max="2000" placeholder="px" aria-label="Custom width in pixels" hidden style="width:80px;flex:0 0 auto"><button id="b-full" style="flex:0 0 auto">Full screen</button></div>
+    <div class="frame"><iframe id="pv" title="Live preview" sandbox="allow-scripts"></iframe></div>
+    <div id="issues" aria-live="polite"></div>
+  </section>
+  <section class="pane" id="p-edit">
+    <div class="tabs" role="tablist" id="etabs"></div>
+    <div id="epane"></div>
+  </section>
+</main>
+<script src="js/definitions.js"></script>
+<script src="js/state.js"></script>
+<script src="js/generator.js"></script>
+<script src="js/validator.js"></script>
+<script src="js/renderer.js"></script>
+<script src="js/builder.js"></script>
+<script src="js/events.js"></script>
+<script src="js/css-builder.js"></script>
+<script src="js/component-builder.js"></script>
+<script src="js/docs.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/json-builder.js"></script>
+<script src="js/js-builder.js"></script>
+<script src="js/templates.js"></script>
+<script src="js/importer.js"></script>
+<script src="js/editor.js"></script>
+<script src="js/a11y.js"></script>
+<script src="js/dnd.js"></script>
+<script src="js/definitions-io.js"></script>
+<script src="js/canvas-studio.js"></script>
+<script src="js/forge3d.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

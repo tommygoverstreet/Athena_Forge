@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#14110F"/>
+  <circle cx="256" cy="256" r="168" fill="none" stroke="#C6A15B" stroke-width="10"/>
+  <text x="256" y="335" font-family="Georgia, serif" font-size="230" fill="#C6A15B" text-anchor="middle">Α</text>
+  <path d="M120 400 L392 400" stroke="#C6A15B" stroke-width="8" stroke-linecap="round"/>
+  <path d="M160 424 L352 424" stroke="#C6A15B" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+</svg>
