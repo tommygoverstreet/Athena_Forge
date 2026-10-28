@@ -1,0 +1,469 @@
+{
+  "header": {
+    "cat": "Semantic"
+  },
+  "nav": {
+    "cat": "Semantic"
+  },
+  "main": {
+    "cat": "Semantic"
+  },
+  "section": {
+    "cat": "Semantic"
+  },
+  "article": {
+    "cat": "Semantic"
+  },
+  "footer": {
+    "cat": "Semantic"
+  },
+  "h1": {
+    "cat": "Text",
+    "text": "Heading"
+  },
+  "h2": {
+    "cat": "Text",
+    "text": "Heading"
+  },
+  "h3": {
+    "cat": "Text",
+    "text": "Heading"
+  },
+  "p": {
+    "cat": "Text",
+    "text": "Paragraph text"
+  },
+  "div": {
+    "cat": "Text"
+  },
+  "span": {
+    "cat": "Text",
+    "text": "Text"
+  },
+  "hr": {
+    "cat": "Text",
+    "void": true
+  },
+  "br": {
+    "cat": "Text",
+    "void": true
+  },
+  "a": {
+    "cat": "Inline",
+    "text": "Link",
+    "fields": [
+      {
+        "k": "href",
+        "label": "Link address",
+        "def": "#"
+      },
+      {
+        "k": "target",
+        "label": "Target",
+        "opts": [
+          "",
+          "_blank"
+        ]
+      }
+    ]
+  },
+  "strong": {
+    "cat": "Inline",
+    "text": "Strong"
+  },
+  "em": {
+    "cat": "Inline",
+    "text": "Emphasis"
+  },
+  "ul": {
+    "cat": "Lists"
+  },
+  "ol": {
+    "cat": "Lists"
+  },
+  "li": {
+    "cat": "Lists",
+    "text": "Item"
+  },
+  "img": {
+    "cat": "Media",
+    "void": true,
+    "fields": [
+      {
+        "k": "src",
+        "label": "Image address"
+      },
+      {
+        "k": "alt",
+        "label": "Alt text (describe the image)"
+      }
+    ]
+  },
+  "h4": {
+    "cat": "Text",
+    "text": "Heading"
+  },
+  "h5": {
+    "cat": "Text",
+    "text": "Heading"
+  },
+  "h6": {
+    "cat": "Text",
+    "text": "Heading"
+  },
+  "pre": {
+    "cat": "Text",
+    "text": "Preformatted"
+  },
+  "blockquote": {
+    "cat": "Text",
+    "text": "Quote"
+  },
+  "address": {
+    "cat": "Semantic"
+  },
+  "aside": {
+    "cat": "Semantic"
+  },
+  "search": {
+    "cat": "Semantic"
+  },
+  "code": {
+    "cat": "Inline",
+    "text": "code"
+  },
+  "kbd": {
+    "cat": "Inline",
+    "text": "kbd"
+  },
+  "mark": {
+    "cat": "Inline",
+    "text": "mark"
+  },
+  "small": {
+    "cat": "Inline",
+    "text": "small"
+  },
+  "sub": {
+    "cat": "Inline",
+    "text": "sub"
+  },
+  "sup": {
+    "cat": "Inline",
+    "text": "sup"
+  },
+  "cite": {
+    "cat": "Inline",
+    "text": "cite"
+  },
+  "q": {
+    "cat": "Inline",
+    "text": "q"
+  },
+  "del": {
+    "cat": "Inline",
+    "text": "del"
+  },
+  "ins": {
+    "cat": "Inline",
+    "text": "ins"
+  },
+  "b": {
+    "cat": "Inline",
+    "text": "b"
+  },
+  "i": {
+    "cat": "Inline",
+    "text": "i"
+  },
+  "u": {
+    "cat": "Inline",
+    "text": "u"
+  },
+  "s": {
+    "cat": "Inline",
+    "text": "s"
+  },
+  "var": {
+    "cat": "Inline",
+    "text": "var"
+  },
+  "samp": {
+    "cat": "Inline",
+    "text": "samp"
+  },
+  "abbr": {
+    "cat": "Inline",
+    "text": "abbr",
+    "fields": [
+      {
+        "k": "title",
+        "label": "Full meaning"
+      }
+    ]
+  },
+  "time": {
+    "cat": "Inline",
+    "text": "Date",
+    "fields": [
+      {
+        "k": "datetime",
+        "label": "Machine date (2026-10-03)"
+      }
+    ]
+  },
+  "dl": {
+    "cat": "Lists"
+  },
+  "dt": {
+    "cat": "Lists",
+    "text": "Term"
+  },
+  "dd": {
+    "cat": "Lists",
+    "text": "Definition"
+  },
+  "audio": {
+    "cat": "Media",
+    "fields": [
+      {
+        "k": "controls",
+        "label": "Controls",
+        "opts": [
+          "controls",
+          ""
+        ]
+      }
+    ]
+  },
+  "video": {
+    "cat": "Media",
+    "fields": [
+      {
+        "k": "src",
+        "label": "Video address"
+      },
+      {
+        "k": "controls",
+        "label": "Controls",
+        "opts": [
+          "controls",
+          ""
+        ]
+      }
+    ]
+  },
+  "source": {
+    "cat": "Media",
+    "void": true,
+    "fields": [
+      {
+        "k": "src",
+        "label": "Address"
+      },
+      {
+        "k": "type",
+        "label": "Type"
+      }
+    ]
+  },
+  "iframe": {
+    "cat": "Media",
+    "fields": [
+      {
+        "k": "src",
+        "label": "Page address"
+      },
+      {
+        "k": "title",
+        "label": "Title (describes the frame)"
+      }
+    ]
+  },
+  "select": {
+    "cat": "Forms",
+    "fields": [
+      {
+        "k": "name",
+        "label": "Name"
+      }
+    ]
+  },
+  "option": {
+    "cat": "Forms",
+    "text": "Option",
+    "fields": [
+      {
+        "k": "value",
+        "label": "Value"
+      }
+    ]
+  },
+  "optgroup": {
+    "cat": "Forms",
+    "fields": [
+      {
+        "k": "label",
+        "label": "Group label"
+      }
+    ]
+  },
+  "fieldset": {
+    "cat": "Forms"
+  },
+  "legend": {
+    "cat": "Forms",
+    "text": "Legend"
+  },
+  "datalist": {
+    "cat": "Forms"
+  },
+  "output": {
+    "cat": "Forms",
+    "text": "0"
+  },
+  "progress": {
+    "cat": "Forms",
+    "fields": [
+      {
+        "k": "value",
+        "label": "Value"
+      },
+      {
+        "k": "max",
+        "label": "Max"
+      }
+    ]
+  },
+  "meter": {
+    "cat": "Forms",
+    "fields": [
+      {
+        "k": "value",
+        "label": "Value"
+      },
+      {
+        "k": "min",
+        "label": "Min"
+      },
+      {
+        "k": "max",
+        "label": "Max"
+      }
+    ]
+  },
+  "dialog": {
+    "cat": "Interactive"
+  },
+  "caption": {
+    "cat": "Tables",
+    "text": "Caption"
+  },
+  "tfoot": {
+    "cat": "Tables"
+  },
+  "colgroup": {
+    "cat": "Tables"
+  },
+  "col": {
+    "cat": "Tables",
+    "void": true
+  },
+  "canvas": {
+    "cat": "Media"
+  },
+  "table": {
+    "cat": "Tables"
+  },
+  "thead": {
+    "cat": "Tables"
+  },
+  "tbody": {
+    "cat": "Tables"
+  },
+  "tr": {
+    "cat": "Tables"
+  },
+  "th": {
+    "cat": "Tables",
+    "text": "Heading"
+  },
+  "td": {
+    "cat": "Tables",
+    "text": "Cell"
+  },
+  "details": {
+    "cat": "Interactive"
+  },
+  "summary": {
+    "cat": "Interactive",
+    "text": "Summary"
+  },
+  "form": {
+    "cat": "Forms"
+  },
+  "label": {
+    "cat": "Forms",
+    "text": "Label",
+    "fields": [
+      {
+        "k": "for",
+        "label": "For (input id)"
+      }
+    ]
+  },
+  "input": {
+    "cat": "Forms",
+    "void": true,
+    "fields": [
+      {
+        "k": "type",
+        "label": "Type",
+        "opts": [
+          "text",
+          "email",
+          "number",
+          "password",
+          "checkbox",
+          "file"
+        ]
+      },
+      {
+        "k": "name",
+        "label": "Name"
+      },
+      {
+        "k": "placeholder",
+        "label": "Placeholder"
+      }
+    ]
+  },
+  "textarea": {
+    "cat": "Forms",
+    "fields": [
+      {
+        "k": "name",
+        "label": "Name"
+      },
+      {
+        "k": "placeholder",
+        "label": "Placeholder"
+      }
+    ]
+  },
+  "button": {
+    "cat": "Forms",
+    "text": "Button",
+    "fields": [
+      {
+        "k": "type",
+        "label": "Type",
+        "opts": [
+          "button",
+          "submit",
+          "reset"
+        ]
+      }
+    ]
+  }
+}

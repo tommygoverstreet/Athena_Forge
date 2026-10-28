@@ -1,0 +1,758 @@
+[
+  {
+    "k": "var",
+    "l": "Variable",
+    "f": [
+      [
+        "kind",
+        "Kind",
+        [
+          "const",
+          "let",
+          "var"
+        ]
+      ],
+      [
+        "name",
+        "Name",
+        "total"
+      ],
+      [
+        "value",
+        "Value",
+        "0"
+      ]
+    ],
+    "t": "{kind} {name} = {value};"
+  },
+  {
+    "k": "fn",
+    "l": "Function declaration",
+    "f": [
+      [
+        "name",
+        "Name",
+        "greet"
+      ],
+      [
+        "params",
+        "Parameters",
+        "name"
+      ],
+      [
+        "body",
+        "Body",
+        "return `Hello, ${name}!`;"
+      ]
+    ],
+    "t": "function {name}({params}) {\n  {body}\n}"
+  },
+  {
+    "k": "arrow",
+    "l": "Arrow function",
+    "f": [
+      [
+        "name",
+        "Name",
+        "double"
+      ],
+      [
+        "params",
+        "Parameters",
+        "n"
+      ],
+      [
+        "body",
+        "Returns",
+        "n * 2"
+      ]
+    ],
+    "t": "const {name} = ({params}) => {body};"
+  },
+  {
+    "k": "if",
+    "l": "If / else",
+    "f": [
+      [
+        "cond",
+        "Condition",
+        "score >= 50"
+      ],
+      [
+        "then",
+        "Then",
+        "console.log(\"pass\");"
+      ],
+      [
+        "else",
+        "Otherwise",
+        "console.log(\"try again\");"
+      ]
+    ],
+    "t": "if ({cond}) {\n  {then}\n} else {\n  {else}\n}"
+  },
+  {
+    "k": "switch",
+    "l": "Switch",
+    "f": [
+      [
+        "expr",
+        "Value",
+        "day"
+      ],
+      [
+        "a",
+        "Case",
+        "\"Mon\""
+      ],
+      [
+        "x",
+        "Do",
+        "console.log(\"Start of week\");"
+      ],
+      [
+        "y",
+        "Default",
+        "console.log(\"Other day\");"
+      ]
+    ],
+    "t": "switch ({expr}) {\n  case {a}:\n    {x}\n    break;\n  default:\n    {y}\n}"
+  },
+  {
+    "k": "for",
+    "l": "For loop",
+    "f": [
+      [
+        "n",
+        "Repeat times",
+        "5"
+      ],
+      [
+        "body",
+        "Body",
+        "console.log(i);"
+      ]
+    ],
+    "t": "for (let i = 0; i < {n}; i++) {\n  {body}\n}"
+  },
+  {
+    "k": "forof",
+    "l": "For...of loop",
+    "f": [
+      [
+        "item",
+        "Item name",
+        "item"
+      ],
+      [
+        "list",
+        "List",
+        "DATA.items ?? []"
+      ],
+      [
+        "body",
+        "Body",
+        "console.log(item);"
+      ]
+    ],
+    "t": "for (const {item} of {list}) {\n  {body}\n}"
+  },
+  {
+    "k": "while",
+    "l": "While loop",
+    "f": [
+      [
+        "cond",
+        "Condition",
+        "count < 3"
+      ],
+      [
+        "body",
+        "Body",
+        "count++;"
+      ]
+    ],
+    "t": "while ({cond}) {\n  {body}\n}"
+  },
+  {
+    "k": "arr",
+    "l": "Array method",
+    "f": [
+      [
+        "out",
+        "Result name",
+        "result"
+      ],
+      [
+        "arr",
+        "Array",
+        "[3, 1, 2]"
+      ],
+      [
+        "method",
+        "Method",
+        [
+          "map",
+          "filter",
+          "find",
+          "some",
+          "every",
+          "sort",
+          "slice",
+          "reduce",
+          "push",
+          "pop",
+          "splice"
+        ]
+      ],
+      [
+        "cb",
+        "Arguments",
+        "(x) => x * 2"
+      ]
+    ],
+    "t": "const {out} = {arr}.{method}({cb});"
+  },
+  {
+    "k": "obj",
+    "l": "Object with method",
+    "f": [
+      [
+        "name",
+        "Name",
+        "user"
+      ],
+      [
+        "k",
+        "Property",
+        "name"
+      ],
+      [
+        "v",
+        "Value",
+        "\"Ada\""
+      ],
+      [
+        "m",
+        "Method",
+        "greet"
+      ],
+      [
+        "body",
+        "Method body",
+        "return `Hi, ${this.name}`;"
+      ]
+    ],
+    "t": "const {name} = {\n  {k}: {v},\n  {m}() {\n    {body}\n  }\n};"
+  },
+  {
+    "k": "dom",
+    "l": "Change an element",
+    "f": [
+      [
+        "sel",
+        "Selector",
+        "\"#status\""
+      ],
+      [
+        "prop",
+        "Property",
+        [
+          "textContent",
+          "innerHTML",
+          "className",
+          "hidden",
+          "style.color"
+        ]
+      ],
+      [
+        "value",
+        "Value",
+        "\"Done\""
+      ]
+    ],
+    "t": "document.querySelector({sel}).{prop} = {value};"
+  },
+  {
+    "k": "new",
+    "l": "Create and append element",
+    "f": [
+      [
+        "tag",
+        "Tag",
+        "\"li\""
+      ],
+      [
+        "text",
+        "Text",
+        "\"New item\""
+      ],
+      [
+        "parent",
+        "Parent selector",
+        "\"ul\""
+      ]
+    ],
+    "t": "const el = document.createElement({tag});\nel.textContent = {text};\ndocument.querySelector({parent}).append(el);"
+  },
+  {
+    "k": "timer",
+    "l": "Timer",
+    "f": [
+      [
+        "kind",
+        "Kind",
+        [
+          "setTimeout",
+          "setInterval"
+        ]
+      ],
+      [
+        "ms",
+        "Milliseconds",
+        "1000"
+      ],
+      [
+        "body",
+        "Body",
+        "console.log(\"tick\");"
+      ]
+    ],
+    "t": "{kind}(() => {\n  {body}\n}, {ms});"
+  },
+  {
+    "k": "store",
+    "l": "Local storage (saves in the browser)",
+    "f": [
+      [
+        "key",
+        "Key",
+        "\"theme\""
+      ],
+      [
+        "value",
+        "Value",
+        "\"dark\""
+      ]
+    ],
+    "t": "localStorage.setItem({key}, JSON.stringify({value}));"
+  },
+  {
+    "k": "fetch",
+    "l": "Fetch (needs internet and a server that allows it)",
+    "f": [
+      [
+        "url",
+        "URL",
+        "\"https://example.com/api\""
+      ],
+      [
+        "body",
+        "Use result",
+        "console.log(data);"
+      ]
+    ],
+    "t": "fetch({url})\n  .then((res) => res.json())\n  .then((data) => {\n    {body}\n  })\n  .catch((err) => console.error(err));"
+  },
+  {
+    "k": "clip",
+    "l": "API: Copy to clipboard",
+    "note": "Needs HTTPS and a click or key press from the visitor. Some browsers ask permission. Asynchronous.",
+    "f": [
+      [
+        "sel",
+        "Button selector",
+        "\"#copy\""
+      ],
+      [
+        "text",
+        "Text to copy",
+        "\"Copied text\""
+      ]
+    ],
+    "t": "document.querySelector({sel}).addEventListener(\"click\", async () => {\n  await navigator.clipboard.writeText({text});\n});"
+  },
+  {
+    "k": "geo",
+    "l": "API: Geolocation",
+    "note": "Needs HTTPS and the visitor must allow it. Asynchronous.",
+    "f": [
+      [
+        "ok",
+        "When found",
+        "console.log(pos.coords.latitude, pos.coords.longitude);"
+      ]
+    ],
+    "t": "navigator.geolocation.getCurrentPosition(\n  (pos) => {\n    {ok}\n  },\n  (err) => console.error(err.message)\n);"
+  },
+  {
+    "k": "notify",
+    "l": "API: Notification",
+    "note": "Needs a secure page and the visitor must allow it. Asynchronous.",
+    "f": [
+      [
+        "title",
+        "Title",
+        "\"Hello\""
+      ]
+    ],
+    "t": "Notification.requestPermission().then((result) => {\n  if (result === \"granted\") new Notification({title});\n});"
+  },
+  {
+    "k": "sess",
+    "l": "API: Session storage",
+    "note": "Cleared when the tab closes. Synchronous.",
+    "f": [
+      [
+        "key",
+        "Key",
+        "\"step\""
+      ],
+      [
+        "value",
+        "Value",
+        "\"2\""
+      ]
+    ],
+    "t": "sessionStorage.setItem({key}, {value});"
+  },
+  {
+    "k": "load",
+    "l": "API: Read from local storage",
+    "note": "Returns null if nothing was saved. Synchronous.",
+    "f": [
+      [
+        "name",
+        "Variable",
+        "saved"
+      ],
+      [
+        "key",
+        "Key",
+        "\"theme\""
+      ]
+    ],
+    "t": "const {name} = JSON.parse(localStorage.getItem({key}) ?? \"null\");"
+  },
+  {
+    "k": "urlp",
+    "l": "API: URL parameters",
+    "note": "Reads values such as ?page=2 from the address.",
+    "f": [
+      [
+        "name",
+        "Variable",
+        "page"
+      ],
+      [
+        "key",
+        "Parameter",
+        "\"page\""
+      ]
+    ],
+    "t": "const params = new URLSearchParams(location.search);\nconst {name} = params.get({key});"
+  },
+  {
+    "k": "fdata",
+    "l": "API: Form data",
+    "note": "Collects every named field of a form when it is submitted.",
+    "f": [
+      [
+        "form",
+        "Form selector",
+        "\"form\""
+      ],
+      [
+        "body",
+        "Use data",
+        "console.log(data);"
+      ]
+    ],
+    "t": "document.querySelector({form}).addEventListener(\"submit\", (event) => {\n  event.preventDefault();\n  const data = Object.fromEntries(new FormData(event.target));\n  {body}\n});"
+  },
+  {
+    "k": "raf",
+    "l": "API: Animation frame",
+    "note": "Runs about 60 times a second while the tab is visible.",
+    "f": [
+      [
+        "body",
+        "Each frame",
+        "console.log(Math.round(time));"
+      ]
+    ],
+    "t": "function step(time) {\n  {body}\n  requestAnimationFrame(step);\n}\nrequestAnimationFrame(step);"
+  },
+  {
+    "k": "hist",
+    "l": "API: History",
+    "note": "Changes the address without reloading. Works on a real site, not always in the preview.",
+    "f": [
+      [
+        "url",
+        "New address",
+        "\"/about\""
+      ]
+    ],
+    "t": "history.pushState({}, \"\", {url});"
+  },
+  {
+    "k": "file",
+    "l": "API: Read a chosen file",
+    "note": "Needs an input of type file. Asynchronous.",
+    "f": [
+      [
+        "sel",
+        "File input selector",
+        "\"#upload\""
+      ],
+      [
+        "body",
+        "Use text",
+        "console.log(reader.result);"
+      ]
+    ],
+    "t": "document.querySelector({sel}).addEventListener(\"change\", (event) => {\n  const file = event.target.files[0];\n  if (!file) return;\n  const reader = new FileReader();\n  reader.onload = () => {\n    {body}\n  };\n  reader.readAsText(file);\n});"
+  },
+  {
+    "k": "canvas",
+    "l": "API: Canvas rectangle",
+    "note": "Needs a canvas element on the page.",
+    "f": [
+      [
+        "sel",
+        "Canvas selector",
+        "\"canvas\""
+      ],
+      [
+        "color",
+        "Colour",
+        "\"#2a56d6\""
+      ]
+    ],
+    "t": "const ctx = document.querySelector({sel}).getContext(\"2d\");\nctx.fillStyle = {color};\nctx.fillRect(10, 10, 100, 60);"
+  },
+  {
+    "k": "ws",
+    "l": "API: WebSocket",
+    "note": "Needs a WebSocket server, and wss:// on HTTPS pages. Asynchronous.",
+    "f": [
+      [
+        "url",
+        "Server address",
+        "\"wss://example.com/socket\""
+      ],
+      [
+        "body",
+        "On message",
+        "console.log(event.data);"
+      ]
+    ],
+    "t": "const socket = new WebSocket({url});\nsocket.addEventListener(\"message\", (event) => {\n  {body}\n});"
+  },
+  {
+    "k": "worker",
+    "l": "API: Web worker",
+    "note": "Runs code on a separate thread. This version builds the worker from text, so it needs no extra file. Asynchronous.",
+    "f": [
+      [
+        "code",
+        "Worker code",
+        "\"onmessage = (e) => postMessage(e.data * 2);\""
+      ],
+      [
+        "msg",
+        "Message",
+        "21"
+      ],
+      [
+        "body",
+        "On reply",
+        "console.log(event.data);"
+      ]
+    ],
+    "t": "const worker = new Worker(URL.createObjectURL(new Blob([{code}], { type: \"text/javascript\" })));\nworker.onmessage = (event) => {\n  {body}\n};\nworker.postMessage({msg});"
+  },
+  {
+    "k": "promise",
+    "l": "API: Promise",
+    "note": "Asynchronous. The result arrives later through then().",
+    "f": [
+      [
+        "name",
+        "Name",
+        "wait"
+      ],
+      [
+        "body",
+        "Work",
+        "setTimeout(() => resolve(\"done\"), 500);"
+      ]
+    ],
+    "t": "const {name} = new Promise((resolve, reject) => {\n  {body}\n});\n{name}.then((value) => console.log(value));"
+  },
+  {
+    "k": "getid",
+    "l": "DOM: Get element by id",
+    "f": [
+      [
+        "name",
+        "Variable",
+        "box"
+      ],
+      [
+        "id",
+        "Id",
+        "\"box\""
+      ]
+    ],
+    "t": "const {name} = document.getElementById({id});"
+  },
+  {
+    "k": "qsa",
+    "l": "DOM: Do something to every match",
+    "f": [
+      [
+        "name",
+        "Variable",
+        "items"
+      ],
+      [
+        "sel",
+        "Selector",
+        "\".item\""
+      ],
+      [
+        "body",
+        "For each el",
+        "el.classList.add(\"seen\");"
+      ]
+    ],
+    "t": "const {name} = document.querySelectorAll({sel});\n{name}.forEach((el) => {\n  {body}\n});"
+  },
+  {
+    "k": "addto",
+    "l": "DOM: Add an element into another",
+    "f": [
+      [
+        "parent",
+        "Parent selector",
+        "\"ul\""
+      ],
+      [
+        "kind",
+        "How",
+        [
+          "append",
+          "prepend",
+          "appendChild"
+        ]
+      ],
+      [
+        "child",
+        "Element",
+        "document.createElement(\"li\")"
+      ]
+    ],
+    "t": "document.querySelector({parent}).{kind}({child});"
+  },
+  {
+    "k": "rm",
+    "l": "DOM: Remove an element",
+    "f": [
+      [
+        "sel",
+        "Selector",
+        "\".old\""
+      ]
+    ],
+    "t": "document.querySelector({sel}).remove();"
+  },
+  {
+    "k": "rw",
+    "l": "DOM: Replace an element",
+    "f": [
+      [
+        "sel",
+        "Selector",
+        "\".old\""
+      ],
+      [
+        "node",
+        "New element",
+        "document.createElement(\"p\")"
+      ]
+    ],
+    "t": "document.querySelector({sel}).replaceWith({node});"
+  },
+  {
+    "k": "cl",
+    "l": "DOM: Change classes",
+    "f": [
+      [
+        "sel",
+        "Selector",
+        "\"#box\""
+      ],
+      [
+        "kind",
+        "Action",
+        [
+          "add",
+          "remove",
+          "toggle"
+        ]
+      ],
+      [
+        "cls",
+        "Class",
+        "\"active\""
+      ]
+    ],
+    "t": "document.querySelector({sel}).classList.{kind}({cls});"
+  },
+  {
+    "k": "attr",
+    "l": "DOM: Set an attribute",
+    "f": [
+      [
+        "sel",
+        "Selector",
+        "\"a\""
+      ],
+      [
+        "name",
+        "Attribute",
+        "\"href\""
+      ],
+      [
+        "value",
+        "Value",
+        "\"#top\""
+      ]
+    ],
+    "t": "document.querySelector({sel}).setAttribute({name}, {value});"
+  },
+  {
+    "k": "sty",
+    "l": "DOM: Set a style",
+    "f": [
+      [
+        "sel",
+        "Selector",
+        "\"#box\""
+      ],
+      [
+        "prop",
+        "Property",
+        "backgroundColor"
+      ],
+      [
+        "value",
+        "Value",
+        "\"tomato\""
+      ]
+    ],
+    "t": "document.querySelector({sel}).style.{prop} = {value};"
+  }
+]
