@@ -1,0 +1,13 @@
+'use strict';
+/* components */
+const CMPS={
+Card:()=>({nodes:[n('article',{attrs:{class:'card'},children:[n('h2',{text:'Card title'}),n('p',{text:'Describe the card here.'}),n('a',{text:'Read more',attrs:{href:'#'}})]})],css:[{sel:'.card',body:'border: 1px solid #c8d0da;\nborder-radius: 10px;\npadding: 16px;\nmax-width: 320px;'}]}),
+Navbar:()=>({nodes:[n('nav',{attrs:{class:'navbar'},children:[n('a',{text:'Home',attrs:{href:'#'}}),n('a',{text:'About',attrs:{href:'#'}}),n('a',{text:'Contact',attrs:{href:'#'}})]})],css:[{sel:'.navbar',body:'display: flex;\ngap: 16px;\npadding: 12px 20px;\nbackground: #1c2631;'},{sel:'.navbar a',body:'color: #fff;\ntext-decoration: none;'}]}),
+Hero:()=>({nodes:[n('header',{attrs:{class:'hero'},children:[n('h1',{text:'Your headline here'}),n('p',{text:'One sentence about what you offer.'}),n('button',{text:'Get started'})]})],css:[{sel:'.hero',body:'padding: 64px 24px;\ntext-align: center;\nbackground: #e8eefc;'}]}),
+Alert:()=>({nodes:[n('div',{attrs:{class:'alert',role:'alert'},text:'Something needs your attention.'})],css:[{sel:'.alert',body:'padding: 12px 16px;\nborder-left: 4px solid #c77700;\nbackground: #fff4e0;\ncolor: #4a3000;'}]}),
+'Contact form':()=>({nodes:[n('form',{attrs:{class:'contact'},children:[n('label',{text:'Name',attrs:{for:'cname'}}),n('input',{attrs:{id:'cname',type:'text',name:'name'}}),n('label',{text:'Email',attrs:{for:'cemail'}}),n('input',{attrs:{id:'cemail',type:'email',name:'email'}}),n('button',{text:'Send',attrs:{type:'submit'}})]})],css:[{sel:'.contact',body:'display: grid;\ngap: 8px;\nmax-width: 360px;'}]})};
+const customC=()=>{try{return JSON.parse(storeGet('components')||'[]')}catch{return[]}};
+function putNodes(nodes){const f=sel&&find(sel),tgt=f&&!DEFS[f.node.tag].void?f.node.children:S.tree;nodes.forEach(x=>tgt.push(x));sel=nodes[0].uid}
+function insertC(c){snap();putNodes(c.nodes);(c.css||[]).forEach(r=>{if(!S.css.some(x=>x.sel===r.sel&&!x.media))S.css.push({media:'',...r})});renderAll()}
+function reuid(x){const c=clone(x);(function r(z){z.uid=++uid;z.children.forEach(r)})(c);return c}
+function renderComps(){const cu=customC();$('#epane').innerHTML='<h2>Built-in</h2>'+Object.keys(CMPS).map(k=>`<button data-cin="${esc(k)}">${esc(k)}</button> `).join('')+'<h2 style="margin-top:14px">Your components</h2>'+(cu.length?cu.map((c,i)=>`<div class="row"><button data-cu="${i}">${esc(c.name)}</button><button data-cx="${i}" style="flex:0 0 auto">Delete</button></div>`).join(''):'<div class="empty">None yet. Select an element, name it below, and save it.</div>')+field('Save selected element as component',`<input id="cname2" placeholder="Component name">`)+'<button id="csave" class="primary">Save component</button>'}
